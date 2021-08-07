@@ -1,7 +1,7 @@
 app:
   build: 
     type: gradle
-    command: ./gradlew clean build
+    command: clean build
   strategy:
     master: disabled
     main: disabled
