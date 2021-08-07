@@ -1,23 +1,25 @@
-appBuildType: gradle
-appBuildCommand: clean build
-appBuildBranch:
-  master: disabled
-  main: disabled
-git:
-  url: https://github.com/ggnanasekaran77/SpringCloudConfigServer.git 
-notification:
-  teams:
-    default:
-    prd:
+app:
+  build: 
+    type: gradle
+    command: ./gradlew clean build
+  strategy:
+    master: disabled
+    main: disabled
+  git:
+    url: https://github.com/ggnanasekaran77/SpringCloudConfigServer.git
 ansible:
   default:
     second:
     - playbookPath:
       playbookName:
       extraVars:
-    confirmation: True
+    confirmation: False
     first:
     - playbookPath:
       playbookName:
       extraVars: 
+notification:
+  teams:
+    default:
+    prd: 
   
