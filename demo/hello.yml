@@ -9,15 +9,16 @@ app:
     url: https://github.com/ggnanasekaran77/configserver.git
 ansible:
   default:
+    first:
+    - playbookPath: tomcat
+      playbookName: deployment.yml
+      extraVars: -i inventories -e targetEnv=all 
+    confirmation: False
     second:
     - playbookPath: tomcat
       playbookName: deployment.yml
       extraVars: -i inventories -e targetEnv=all
     confirmation: False
-    first:
-    - playbookPath:
-      playbookName:
-      extraVars: 
 notification:
   teams:
     default:
