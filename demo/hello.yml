@@ -10,9 +10,9 @@ app:
 ansible:
   default:
     second:
-    - playbookPath:
-      playbookName:
-      extraVars:
+    - playbookPath: tomcat
+      playbookName: deployment.yml
+      extraVars: -i inventories -e targetEnv=all
     confirmation: False
     first:
     - playbookPath:
