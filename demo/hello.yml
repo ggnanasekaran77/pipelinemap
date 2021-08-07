@@ -1,4 +1,6 @@
 app:
+  projectName: demo
+  name: configserver
   build: 
     type: gradle
     command: clean build artifactoryPublish
