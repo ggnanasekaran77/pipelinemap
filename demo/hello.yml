@@ -1,11 +1,10 @@
 app:
   build: 
     type: gradle
-    command: clean build
+    command: clean build artifactoryPublish
     wrapper: True
   strategy:
-    master: disabled
-    main: disabled
+    demo: disabled
   git:
     url: https://github.com/ggnanasekaran77/configserver.git
 ansible:
