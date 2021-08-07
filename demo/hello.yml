@@ -2,11 +2,12 @@ app:
   build: 
     type: gradle
     command: clean build
+    wrapper: True
   strategy:
     master: disabled
     main: disabled
   git:
-    url: https://github.com/ggnanasekaran77/SpringCloudConfigServer.git
+    url: https://github.com/ggnanasekaran77/configserver.git
 ansible:
   default:
     second:
