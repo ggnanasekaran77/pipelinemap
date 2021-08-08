@@ -9,6 +9,8 @@ app:
     demo: disabled
   git:
     url: https://github.com/ggnanasekaran77/configserver.git
+docker:
+  imageName: ggnanasekaran77/configserver
 ansible:
   default:
     first:
