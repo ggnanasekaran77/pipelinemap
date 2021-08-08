@@ -17,7 +17,7 @@ ansible:
     - playbookPath: download_config
       playbookName: download.yml
       extraVars: -e targetEnvGroup=app -e varsAppName=hello -e varsRepoName=demo
-    - playbookPath: tomcat
+    - playbookPath: java
       playbookName: deployment.yml
       extraVars: -e targetEnvGroup=app -e varsAppName=hello
   prd:
@@ -25,7 +25,7 @@ ansible:
     - playbookPath: download_config
       playbookName: download.yml
       extraVars: -e targetEnvGroup=app -e varsAppName=hello -e varsRepoName=demo
-    - playbookPath: tomcat
+    - playbookPath: java
       playbookName: deployment.yml
       extraVars: -e targetEnvGroup=prd1 -e varsAppName=hello -e varsRepoName=demo
     confirmation: True
@@ -33,7 +33,7 @@ ansible:
     - playbookPath: download_config
       playbookName: download.yml
       extraVars: -e targetEnvGroup=app -e varsAppName=hello -e varsRepoName=demo
-    - playbookPath: tomcat
+    - playbookPath: java
       playbookName: deployment.yml
       extraVars: -e targetEnvGroup=prd2 -e varsAppName=hello -e varsRepoName=demo
 
