@@ -3,8 +3,7 @@ app:
   name: configserver
   build: 
     type: gradle
-    # command: clean build artifactoryPublish
-    command: clean build
+    command: clean build artifactoryPublish
     wrapper: True
   strategy:
     demo: disabled
