@@ -3,7 +3,7 @@ app:
   name: configserver
   build: 
     type: gradle
-    command: clean build artifactoryPublish jacocoTestReport sonarqube -Dsonar.branch.name=${appBranch}  
+    command: clean build artifactoryPublish jacocoTestReport sonarqube
     wrapper: True
   strategy:
     demo: disabled
